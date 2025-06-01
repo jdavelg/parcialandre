@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Estudio Tropical Lens</title>
+  <title>Estudio Luz y sombra</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/nivo-lightbox.css">
   <link rel="stylesheet" href="css/default/default.css">
   <link rel="stylesheet" href="css/mi-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
   <style>
     @font-face {
       font-family: 'MiFuente';
@@ -25,7 +27,13 @@
     .fa {
     font-family: 'FontAwesome' !important;
   }
+  
   </style>
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -37,8 +45,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <h1 class="wow bounceInDown rotate">Tropical</h1>
-        <h2 class="wow bounce"> LENS STUDIO</h2>
+        <h1 class="wow bounceInDown rotate">LUZ</h1>
+        <h2 class="wow bounce"> STUDIO </h2>
         <a href="#intro" class="btn btn-default smoothScroll">EMPEZAR</a>
       </div>
     </div>
@@ -49,7 +57,7 @@
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> </button>
-      <a href="#" class="navbar-brand">Tropical Lens</a>
+      <a href="#" class="navbar-brand">LUZ STUDIO</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -69,10 +77,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
-        <h4>BIENVENIDO A TROPICAL LENS</h4>
+        <h4>BIENVENIDO A LUZ STUDIO</h4>
         <h2>Estudio de Fotografía Creativa</h2>
         <hr>
-        <p>En Tropical Lens capturamos tus mejores momentos con un toque único y profesional. Somos expertos en retratos, sesiones familiares, eventos y fotografía digital de alta calidad.</p>
+        <p>En LUZ STUDIO capturamos tus mejores momentos con un toque único y profesional. Somos expertos en retratos, sesiones familiares, eventos y fotografía digital de alta calidad.</p>
       </div>
     </div>
   </div>
@@ -84,7 +92,7 @@
       <div class="col-md-4 col-sm-4 title">
         <h2>Servicios</h2>
         <hr>
-        <p>Ofrecemos soluciones visuales personalizadas para bodas, productos, redes sociales y más. Todo bajo un enfoque moderno y tropical.</p>
+        <p>Ofrecemos soluciones visuales personalizadas para bodas, productos, redes sociales y más. Todo bajo un enfoque moderno y creativo.</p>
       </div>
       <div class="col-md-8 col-sm-8">
         <div class="col-md-6 col-sm-6 bg-black"> <i class="fa fa-camera"></i>
@@ -112,19 +120,19 @@
         <hr>
         <p>Un grupo de apasionados por capturar la esencia de cada historia a través del lente.</p>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s"><img src="images/team1.jpg" class="img-responsive" alt="">
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s"><img src="images/team 55.jpg" class="img-responsive" alt="">
         <div class="team-des">
           <h4>Tracy</h4>
           <h3>Diseñadora</h3>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s"><img src="images/team2.jpg" class="img-responsive" alt="">
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s"><img src="images/team 22.jpg" class="img-responsive" alt="">
         <div class="team-des">
           <h4>Linda</h4>
           <h3>Gerente</h3>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s"><img src="images/team3.jpg" class="img-responsive" alt="">
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s"><img src="images/team 33.jpg" class="img-responsive" alt="">
         <div class="team-des">
           <h4>Mary</h4>
           <h3>Desarrolladora</h3>
@@ -134,7 +142,10 @@
   </div>
 </section>
 
-<div id="portfolio">
+
+  
+
+<div id="portafolio">
   <div class="container">
     <div class="row">
       <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
@@ -143,13 +154,31 @@
         <p>Explora algunos de nuestros trabajos más destacados en fotografía creativa y comercial.</p>
       </div>
       <div class="col-md-12 col-sm-12"></div>
-      <div class="col-md-3 col-sm-3 wow fadeIn"><a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt=""></a></div>
-      <div class="col-md-3 col-sm-3 wow fadeIn"><a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt=""></a></div>
-      <div class="col-md-3 col-sm-3 wow fadeIn"><a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt=""></a></div>
-      <div class="col-md-3 col-sm-3 wow fadeIn"><a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img4.jpg" alt=""></a></div>
+
+      <div class="col-md-3 col-sm-3 wow fadeIn">
+        <a data-fancybox="portfolio" href="images/portafolio 9.JPG" data-caption="Portafolio 9">
+          <img src="images/portafolio 9.JPG" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeIn">
+        <a data-fancybox="portfolio" href="images/portafolio 6.JPG" data-caption="Portafolio 6">
+          <img src="images/portafolio 6.JPG" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeIn">
+        <a data-fancybox="portfolio" href="images/portafolio 2.JPG" data-caption="Portafolio 2">
+          <img src="images/portafolio 2.JPG" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeIn">
+        <a data-fancybox="portfolio" href="images/portafolio 11.JPG" data-caption="Portafolio 11">
+          <img src="images/portafolio 11.JPG" alt="" class="img-responsive">
+        </a>
+      </div>
     </div>
   </div>
 </div>
+  
 
 <div id="price">
   <div class="container">
@@ -246,7 +275,7 @@
         </ul>
       </div>
       <div class="col-md-12 col-sm-12 copyright">
-        <p>© 2025 Tropical Lens Studio - Todos los derechos reservados, By Andre</p>
+        <p>© 2025 Luz Studio - Todos los derechos reservados, By Marie</p>
       </div>
     </div>
   </div>
@@ -260,5 +289,7 @@
 <script src="js/jquery.parallax.js"></script> 
 <script src="js/wow.min.js"></script> 
 <script src="js/custom.js"></script>
+
+
 </body>
 </html>
